@@ -1,0 +1,91 @@
+﻿<navigation:Page xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"  xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"  x:Class="FamilyPortal.DailyConsume.DailyConsume" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Daily Consume">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Name="TimePeriodTextBlock" FontSize="16" Style="{StaticResource ContentTextStyle}" VerticalAlignment="Center"></TextBlock>
+                <TextBlock Name="TimeTextBlock" Style="{StaticResource ContentTextStyle}" VerticalAlignment="Center" Margin="5,0,0,0"></TextBlock>
+                <Image Name="CalendarImage" Width="25" Height="25" Cursor="Hand" Margin="5,0,0,0"></Image>
+            </StackPanel>
+            <StackPanel Name="TimeSelectStackPanel" Orientation="Horizontal" Margin="0,5,0,0" Visibility="Collapsed">
+                <ComboBox Name="TimeTypeComboBox" Height="24" Width="100"></ComboBox>
+                <StackPanel Name="ThisStackPanel" Orientation="Horizontal" Visibility="Collapsed">
+                    <ComboBox Name="ThisComboBox" Height="24" Width="100" Margin="5,0,0,0"></ComboBox>
+                </StackPanel>
+                <StackPanel Name="LastStackPanel" Orientation="Horizontal" Visibility="Collapsed">
+                    <TextBox Name="LastTextBox" Style="{StaticResource TextBoxStyle}" Margin="5,0,0,0" Width="100"></TextBox>
+                    <TextBlock Name="DaysTextBlock" Text="Days" VerticalAlignment="Center" Margin="5,0,0,0"></TextBlock>
+                </StackPanel>
+                <StackPanel Name="SpecificStackPanel" Orientation="Horizontal" Visibility="Collapsed">
+                    <sdk:DatePicker Name="startDateDatePicker" Style="{StaticResource DatePickerStyle}" Margin="5,0,0,0"/>
+                    <sdk:DatePicker Name="endDateDatePicker" Style="{StaticResource DatePickerStyle}" Margin="5,0,0,0"/>
+                </StackPanel>
+                <HyperlinkButton Name="ApplyHyperlinkButton" Content="Apply" FontSize="14" Foreground="Black" IsTabStop="False" VerticalAlignment="Center" Margin="15,0,0,0"></HyperlinkButton>
+                <HyperlinkButton Name="CancelHyperlinkButton" Content="Cancel" FontSize="14" Foreground="Black" IsTabStop="False" VerticalAlignment="Center" Margin="5,0,0,0"></HyperlinkButton>
+            </StackPanel>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="10"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Column="0" VerticalAlignment="Center">
+                <ProgressBar Name="DailyConsumeProgressBar" Width="180" Height="12" IsIndeterminate="True"></ProgressBar>
+                <data:DataGrid Name="DailyConsumeDataGrid" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,5,0,0">
+                    <data:DataGrid.Columns>
+                        <data:DataGridTextColumn Header="Amount(￥)" Binding="{Binding Amount}">
+                        </data:DataGridTextColumn>
+                        <data:DataGridTextColumn Header="Date" Binding="{Binding Date}">
+                        </data:DataGridTextColumn>
+                        <data:DataGridTemplateColumn Header="Operation" Width="80">
+                            <data:DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <HyperlinkButton Content="Operation" VerticalAlignment="Center" Margin="3,0,0,0" Tag="{Binding DailyID}" Foreground="Blue">
+                                        <toolkit:ContextMenuService.ContextMenu>
+                                            <toolkit:ContextMenu>
+                                                <toolkit:MenuItem Name="EditMenuItem" Header="Edit" Click="EditMenuItem_Click" Tag="{Binding DailyID}">
+                                                    <toolkit:MenuItem.Icon>
+                                                        <Image Width="16" Height="16" Source="/FamilyPortal;component/Resources/edit.png"></Image>
+                                                    </toolkit:MenuItem.Icon>
+                                                </toolkit:MenuItem>
+                                                <toolkit:MenuItem Name="DeleteMenuItem" Header="Delete" Click="DeleteMenuItem_Click" Tag="{Binding DailyID}">
+                                                    <toolkit:MenuItem.Icon>
+                                                        <Image Width="16" Height="16" Source="/FamilyPortal;component/Resources/delete.png"></Image>
+                                                    </toolkit:MenuItem.Icon>
+                                                </toolkit:MenuItem>
+                                            </toolkit:ContextMenu>
+                                        </toolkit:ContextMenuService.ContextMenu>
+                                    </HyperlinkButton>
+                                </DataTemplate>
+                            </data:DataGridTemplateColumn.CellTemplate>
+                        </data:DataGridTemplateColumn>
+                    </data:DataGrid.Columns>
+                </data:DataGrid>
+                <data:DataPager Name="DailyConsumeDataPager"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="2" VerticalAlignment="Center">
+                <ProgressBar Name="ConsumeProgressBar" Width="180" Height="12" IsIndeterminate="True"></ProgressBar>
+                <toolkit:Chart Name="ConsumeChart" Title="Consume Chart" Margin="0,5,0,0" Height="420" BorderThickness="0">
+                </toolkit:Chart>
+                <toolkit:WrapPanel Name="DetailWrapPanel" Orientation="Horizontal"  />
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <HyperlinkButton Name="AddHyperlinkButton" Content="Add" FontSize="14" Foreground="Black"></HyperlinkButton>
+        </StackPanel>
+    </Grid>
+</navigation:Page>

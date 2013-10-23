@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="http://localhost:7911/FamilyService.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="http://localhost:7911/FamilyService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:7911/FamilyService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/FamilyPortal.Data" />
+      <xsd:import schemaLocation="http://localhost:7911/FamilyService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:7911/FamilyService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/FamilyPortal.Common" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="FamilyService_DoWork_InputMessage">
+    <wsdl:part name="parameters" element="DoWork" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_DoWork_OutputMessage">
+    <wsdl:part name="parameters" element="DoWorkResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_SetSession_InputMessage">
+    <wsdl:part name="parameters" element="SetSession" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_SetSession_OutputMessage">
+    <wsdl:part name="parameters" element="SetSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetSession_InputMessage">
+    <wsdl:part name="parameters" element="GetSession" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetSession_OutputMessage">
+    <wsdl:part name="parameters" element="GetSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetUserInfoByID_InputMessage">
+    <wsdl:part name="parameters" element="GetUserInfoByID" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetUserInfoByID_OutputMessage">
+    <wsdl:part name="parameters" element="GetUserInfoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetUserInfoByAccountAndPassword_InputMessage">
+    <wsdl:part name="parameters" element="GetUserInfoByAccountAndPassword" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetUserInfoByAccountAndPassword_OutputMessage">
+    <wsdl:part name="parameters" element="GetUserInfoByAccountAndPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetAllUserInfo_InputMessage">
+    <wsdl:part name="parameters" element="GetAllUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetAllUserInfo_OutputMessage">
+    <wsdl:part name="parameters" element="GetAllUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetAllConsumeType_InputMessage">
+    <wsdl:part name="parameters" element="GetAllConsumeType" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetAllConsumeType_OutputMessage">
+    <wsdl:part name="parameters" element="GetAllConsumeTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeTypeById_InputMessage">
+    <wsdl:part name="parameters" element="GetConsumeTypeById" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeTypeById_OutputMessage">
+    <wsdl:part name="parameters" element="GetConsumeTypeByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeByTypeID_InputMessage">
+    <wsdl:part name="parameters" element="GetConsumeByTypeID" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeByTypeID_OutputMessage">
+    <wsdl:part name="parameters" element="GetConsumeByTypeIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_DeleteConsumeByDailyID_InputMessage">
+    <wsdl:part name="parameters" element="DeleteConsumeByDailyID" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_DeleteConsumeByDailyID_OutputMessage">
+    <wsdl:part name="parameters" element="DeleteConsumeByDailyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeByDailyID_InputMessage">
+    <wsdl:part name="parameters" element="GetConsumeByDailyID" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeByDailyID_OutputMessage">
+    <wsdl:part name="parameters" element="GetConsumeByDailyIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeByDailyIDs_InputMessage">
+    <wsdl:part name="parameters" element="GetConsumeByDailyIDs" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetConsumeByDailyIDs_OutputMessage">
+    <wsdl:part name="parameters" element="GetConsumeByDailyIDsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_BatchAddConsumes_InputMessage">
+    <wsdl:part name="parameters" element="BatchAddConsumes" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_BatchAddConsumes_OutputMessage">
+    <wsdl:part name="parameters" element="BatchAddConsumesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_AddOneDailyConsume_InputMessage">
+    <wsdl:part name="parameters" element="AddOneDailyConsume" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_AddOneDailyConsume_OutputMessage">
+    <wsdl:part name="parameters" element="AddOneDailyConsumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_DeleteDailyConsumeByID_InputMessage">
+    <wsdl:part name="parameters" element="DeleteDailyConsumeByID" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_DeleteDailyConsumeByID_OutputMessage">
+    <wsdl:part name="parameters" element="DeleteDailyConsumeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_UpdateDailyConsume_InputMessage">
+    <wsdl:part name="parameters" element="UpdateDailyConsume" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_UpdateDailyConsume_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateDailyConsumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetDailyConsume_InputMessage">
+    <wsdl:part name="parameters" element="GetDailyConsume" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetDailyConsume_OutputMessage">
+    <wsdl:part name="parameters" element="GetDailyConsumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetDailyConsumeByID_InputMessage">
+    <wsdl:part name="parameters" element="GetDailyConsumeByID" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetDailyConsumeByID_OutputMessage">
+    <wsdl:part name="parameters" element="GetDailyConsumeByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetTheDailyConsumeByDate_InputMessage">
+    <wsdl:part name="parameters" element="GetTheDailyConsumeByDate" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetTheDailyConsumeByDate_OutputMessage">
+    <wsdl:part name="parameters" element="GetTheDailyConsumeByDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetParaDetailByInfoID_InputMessage">
+    <wsdl:part name="parameters" element="GetParaDetailByInfoID" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetParaDetailByInfoID_OutputMessage">
+    <wsdl:part name="parameters" element="GetParaDetailByInfoIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_AddBankCard_InputMessage">
+    <wsdl:part name="parameters" element="AddBankCard" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_AddBankCard_OutputMessage">
+    <wsdl:part name="parameters" element="AddBankCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_UpdateBankCard_InputMessage">
+    <wsdl:part name="parameters" element="UpdateBankCard" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_UpdateBankCard_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateBankCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetBackCard_InputMessage">
+    <wsdl:part name="parameters" element="GetBackCard" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_GetBackCard_OutputMessage">
+    <wsdl:part name="parameters" element="GetBackCardResponse" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_IsTest_InputMessage">
+    <wsdl:part name="parameters" element="IsTest" />
+  </wsdl:message>
+  <wsdl:message name="FamilyService_IsTest_OutputMessage">
+    <wsdl:part name="parameters" element="IsTestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FamilyService">
+    <wsdl:operation name="DoWork">
+      <wsdl:input wsaw:Action="urn:FamilyService/DoWork" message="FamilyService_DoWork_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/DoWorkResponse" message="FamilyService_DoWork_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSession">
+      <wsdl:input wsaw:Action="urn:FamilyService/SetSession" message="FamilyService_SetSession_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/SetSessionResponse" message="FamilyService_SetSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSession">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetSession" message="FamilyService_GetSession_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetSessionResponse" message="FamilyService_GetSession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoByID">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetUserInfoByID" message="FamilyService_GetUserInfoByID_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetUserInfoByIDResponse" message="FamilyService_GetUserInfoByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfoByAccountAndPassword">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetUserInfoByAccountAndPassword" message="FamilyService_GetUserInfoByAccountAndPassword_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetUserInfoByAccountAndPasswordResponse" message="FamilyService_GetUserInfoByAccountAndPassword_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUserInfo">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetAllUserInfo" message="FamilyService_GetAllUserInfo_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetAllUserInfoResponse" message="FamilyService_GetAllUserInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllConsumeType">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetAllConsumeType" message="FamilyService_GetAllConsumeType_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetAllConsumeTypeResponse" message="FamilyService_GetAllConsumeType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumeTypeById">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetConsumeTypeById" message="FamilyService_GetConsumeTypeById_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetConsumeTypeByIdResponse" message="FamilyService_GetConsumeTypeById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumeByTypeID">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetConsumeByTypeID" message="FamilyService_GetConsumeByTypeID_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetConsumeByTypeIDResponse" message="FamilyService_GetConsumeByTypeID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteConsumeByDailyID">
+      <wsdl:input wsaw:Action="urn:FamilyService/DeleteConsumeByDailyID" message="FamilyService_DeleteConsumeByDailyID_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/DeleteConsumeByDailyIDResponse" message="FamilyService_DeleteConsumeByDailyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumeByDailyID">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetConsumeByDailyID" message="FamilyService_GetConsumeByDailyID_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetConsumeByDailyIDResponse" message="FamilyService_GetConsumeByDailyID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConsumeByDailyIDs">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetConsumeByDailyIDs" message="FamilyService_GetConsumeByDailyIDs_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetConsumeByDailyIDsResponse" message="FamilyService_GetConsumeByDailyIDs_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BatchAddConsumes">
+      <wsdl:input wsaw:Action="urn:FamilyService/BatchAddConsumes" message="FamilyService_BatchAddConsumes_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/BatchAddConsumesResponse" message="FamilyService_BatchAddConsumes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOneDailyConsume">
+      <wsdl:input wsaw:Action="urn:FamilyService/AddOneDailyConsume" message="FamilyService_AddOneDailyConsume_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/AddOneDailyConsumeResponse" message="FamilyService_AddOneDailyConsume_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDailyConsumeByID">
+      <wsdl:input wsaw:Action="urn:FamilyService/DeleteDailyConsumeByID" message="FamilyService_DeleteDailyConsumeByID_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/DeleteDailyConsumeByIDResponse" message="FamilyService_DeleteDailyConsumeByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDailyConsume">
+      <wsdl:input wsaw:Action="urn:FamilyService/UpdateDailyConsume" message="FamilyService_UpdateDailyConsume_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/UpdateDailyConsumeResponse" message="FamilyService_UpdateDailyConsume_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyConsume">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetDailyConsume" message="FamilyService_GetDailyConsume_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetDailyConsumeResponse" message="FamilyService_GetDailyConsume_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyConsumeByID">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetDailyConsumeByID" message="FamilyService_GetDailyConsumeByID_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetDailyConsumeByIDResponse" message="FamilyService_GetDailyConsumeByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTheDailyConsumeByDate">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetTheDailyConsumeByDate" message="FamilyService_GetTheDailyConsumeByDate_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetTheDailyConsumeByDateResponse" message="FamilyService_GetTheDailyConsumeByDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParaDetailByInfoID">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetParaDetailByInfoID" message="FamilyService_GetParaDetailByInfoID_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetParaDetailByInfoIDResponse" message="FamilyService_GetParaDetailByInfoID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBankCard">
+      <wsdl:input wsaw:Action="urn:FamilyService/AddBankCard" message="FamilyService_AddBankCard_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/AddBankCardResponse" message="FamilyService_AddBankCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBankCard">
+      <wsdl:input wsaw:Action="urn:FamilyService/UpdateBankCard" message="FamilyService_UpdateBankCard_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/UpdateBankCardResponse" message="FamilyService_UpdateBankCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBackCard">
+      <wsdl:input wsaw:Action="urn:FamilyService/GetBackCard" message="FamilyService_GetBackCard_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/GetBackCardResponse" message="FamilyService_GetBackCard_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsTest">
+      <wsdl:input wsaw:Action="urn:FamilyService/IsTest" message="FamilyService_IsTest_InputMessage" />
+      <wsdl:output wsaw:Action="urn:FamilyService/IsTestResponse" message="FamilyService_IsTest_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\FamilyPortal\20130323\webdeploy" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Scripts/DatePicker/skin/default/img.gif" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Images/calendar.gif" publishTime="04/01/2013 20:52:39" />
+    <file relUrl="DailyConsume/ViewDailyConsume.aspx" publishTime="03/23/2013 09:22:27" />
+    <file relUrl="Global.asax" publishTime="03/23/2013 09:22:24" />
+    <file relUrl="Site.Master" publishTime="03/23/2013 09:22:24" />
+    <file relUrl="Styles/Site.css" publishTime="03/23/2013 09:22:31" />
+    <file relUrl="Scripts/DatePicker/WdatePicker.js" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Images/prev.png" publishTime="03/23/2013 09:22:28" />
+    <file relUrl="About.aspx" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="03/23/2013 09:22:29" />
+    <file relUrl="Controls/ConsumeControl.ascx" publishTime="04/05/2013 22:18:18" />
+    <file relUrl="Scripts/DatePicker/skin/default/datepicker.css" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="bin/WebFamilyPortal.pdb" publishTime="05/04/2013 11:24:25" />
+    <file relUrl="DailyConsume/EditDailyConsume.aspx" publishTime="03/23/2013 09:22:27" />
+    <file relUrl="Account/Web.config" publishTime="03/23/2013 09:22:26" />
+    <file relUrl="Account/Register.aspx" publishTime="03/23/2013 09:22:26" />
+    <file relUrl="Account/Login.aspx" publishTime="03/23/2013 09:22:26" />
+    <file relUrl="DailyConsume/AddDailyConsume.aspx" publishTime="05/04/2013 11:22:10" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="03/23/2013 09:22:29" />
+    <file relUrl="bin/FamilyPortal.Common.dll" publishTime="05/04/2013 11:24:24" />
+    <file relUrl="Scripts/DatePicker/skin/datePicker.gif" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Default.aspx" publishTime="03/23/2013 09:22:24" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="03/23/2013 09:22:25" />
+    <file relUrl="bin/WebFamilyPortal.dll" publishTime="05/04/2013 11:24:25" />
+    <file relUrl="Scripts/DatePicker/calendar.js" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="DailyConsume/DailyConsume.aspx" publishTime="03/23/2013 09:22:27" />
+    <file relUrl="Ajax.aspx" publishTime="03/23/2013 09:22:24" />
+    <file relUrl="Scripts/DatePicker/lang/zh-cn.js" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Scripts/DatePicker/skin/whyGreen/img.gif" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="03/23/2013 09:22:25" />
+    <file relUrl="Scripts/DatePicker/skin/WdatePicker.css" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Scripts/DatePicker/skin/whyGreen/bg.jpg" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Scripts/DatePicker/My97DatePicker.htm" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Scripts/DatePicker/skin/whyGreen/datepicker.css" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Web.config" publishTime="05/04/2013 11:24:30" />
+    <file relUrl="Scripts/DatePicker/config.js" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Scripts/DatePicker/lang/zh-tw.js" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="Scripts/DatePicker/lang/en.js" publishTime="04/01/2013 20:57:05" />
+    <file relUrl="bin/FamilyPortal.Common.pdb" publishTime="05/04/2013 11:24:24" />
+    <file relUrl="BankCard/BankCard.aspx" publishTime="03/23/2013 09:22:26" />
+    <file relUrl="Images/next.png" publishTime="03/23/2013 09:22:28" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="03/23/2013 09:22:29" />
+  </publishProfile>
+</publishData>

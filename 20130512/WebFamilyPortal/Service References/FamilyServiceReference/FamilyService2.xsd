@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FamilyPortal.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FamilyPortal.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfNewConsume">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NewConsume" nillable="true" type="tns:NewConsume" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNewConsume" nillable="true" type="tns:ArrayOfNewConsume" />
+  <xs:complexType name="NewConsume">
+    <xs:sequence>
+      <xs:element name="amount" nillable="true" type="xs:decimal" />
+      <xs:element name="consumeID" type="xs:int" />
+      <xs:element name="dailyID" nillable="true" type="xs:int" />
+      <xs:element name="description" nillable="true" type="xs:string" />
+      <xs:element name="typeDesc" nillable="true" type="xs:string" />
+      <xs:element name="typeID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NewConsume" nillable="true" type="tns:NewConsume" />
+  <xs:complexType name="NewBankCard">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Bank" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BankID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="CardID" type="xs:int" />
+      <xs:element minOccurs="0" name="CardNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CardType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CardTypeID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DateFrom" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateTo" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IsUsing" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NewBankCard" nillable="true" type="tns:NewBankCard" />
+  <xs:complexType name="ArrayOfNewBankCard">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="NewBankCard" nillable="true" type="tns:NewBankCard" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNewBankCard" nillable="true" type="tns:ArrayOfNewBankCard" />
+</xs:schema>

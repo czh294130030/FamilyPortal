@@ -1,0 +1,5 @@
+2013/5/4 11:46:17 System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“在 Dispose 后访问的 DataContext。”。
+   在 System.Data.Linq.DataContext.GetTable[TEntity]()
+   在 FamilyPortal.Data.FamilyDataClassesDataContext.get_Consume() 位置 E:\FamilyPortal\20130323\FamilyPortal.Data\FamilyDataClasses.designer.cs:行号 90
+   在 FamilyPortal.Web.FamilyService.GetConsumeByDailyIDs(Nullable`1[] dailyConsumeIDs) 位置 E:\FamilyPortal\20130323\FamilyPortal.Web\FamilyService.svc.cs:行号 220

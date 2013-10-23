@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b8459bc9-78ec-4e5a-a609-19502f088b6a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:7911/FamilyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FamilyService.disco" MetadataType="Disco" ID="8429cc6d-e896-4d7e-b459-058a24d2aed8" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?disco" />
+    <MetadataFile FileName="FamilyService.xsd" MetadataType="Schema" ID="c1a182fc-2d1a-4bce-abcd-bfc03ba4d46f" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="FamilyService1.xsd" MetadataType="Schema" ID="fe6e8b82-8ce8-4388-a0dd-af11a248aff7" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?xsd=xsd2" />
+    <MetadataFile FileName="FamilyService.wsdl" MetadataType="Wsdl" ID="4cca0a88-b404-47ef-9ae0-d174da003966" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?wsdl" />
+    <MetadataFile FileName="FamilyService2.xsd" MetadataType="Schema" ID="34166270-1d34-4ab3-b0d4-1919b5cb1de1" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?xsd=xsd4" />
+    <MetadataFile FileName="FamilyService3.xsd" MetadataType="Schema" ID="497c9ff2-216b-4620-9f34-873f0a0c9bc9" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?xsd=xsd1" />
+    <MetadataFile FileName="FamilyService1.wsdl" MetadataType="Wsdl" ID="00d874bf-9416-48a2-b4f0-9b60b1dfe065" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="FamilyService4.xsd" MetadataType="Schema" ID="2b107d7f-1003-4137-b7de-2a7f99ccdf5c" SourceId="1" SourceUrl="http://localhost:7911/FamilyService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

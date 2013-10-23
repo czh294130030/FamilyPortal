@@ -1,0 +1,6 @@
+E:\FamilyPortal\20130512\FamilyPortal.Data\bin\Debug\FamilyPortal.Data.dll.config
+E:\FamilyPortal\20130512\FamilyPortal.Data\bin\Debug\FamilyPortal.Data.dll
+E:\FamilyPortal\20130512\FamilyPortal.Data\bin\Debug\FamilyPortal.Data.pdb
+E:\FamilyPortal\20130512\FamilyPortal.Data\obj\Debug\ResolveAssemblyReference.cache
+E:\FamilyPortal\20130512\FamilyPortal.Data\obj\Debug\FamilyPortal.Data.dll
+E:\FamilyPortal\20130512\FamilyPortal.Data\obj\Debug\FamilyPortal.Data.pdb

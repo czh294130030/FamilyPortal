@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/FamilyPortal.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/FamilyPortal.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="UserInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userID" type="xs:int" />
+      <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserInfo" nillable="true" type="tns:UserInfo" />
+  <xs:complexType name="ArrayOfUserInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserInfo" nillable="true" type="tns:UserInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserInfo" nillable="true" type="tns:ArrayOfUserInfo" />
+  <xs:complexType name="ArrayOfConsumeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsumeType" nillable="true" type="tns:ConsumeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsumeType" nillable="true" type="tns:ArrayOfConsumeType" />
+  <xs:complexType name="ConsumeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="typeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsumeType" nillable="true" type="tns:ConsumeType" />
+  <xs:complexType name="ArrayOfConsume">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Consume" nillable="true" type="tns:Consume" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsume" nillable="true" type="tns:ArrayOfConsume" />
+  <xs:complexType name="Consume">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="consumeID" type="xs:int" />
+      <xs:element minOccurs="0" name="dailyID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="typeID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Consume" nillable="true" type="tns:Consume" />
+  <xs:complexType name="DailyConsume">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="dailyID" type="xs:int" />
+      <xs:element minOccurs="0" name="date" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DailyConsume" nillable="true" type="tns:DailyConsume" />
+  <xs:complexType name="ArrayOfDailyConsume">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DailyConsume" nillable="true" type="tns:DailyConsume" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDailyConsume" nillable="true" type="tns:ArrayOfDailyConsume" />
+  <xs:complexType name="ArrayOfParaDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParaDetail" nillable="true" type="tns:ParaDetail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfParaDetail" nillable="true" type="tns:ArrayOfParaDetail" />
+  <xs:complexType name="ParaDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="detailID" type="xs:int" />
+      <xs:element minOccurs="0" name="infoID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ParaDetail" nillable="true" type="tns:ParaDetail" />
+  <xs:complexType name="BankCard">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="amount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="bankID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cardID" type="xs:int" />
+      <xs:element minOccurs="0" name="cardNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cardTypeID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cityID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="dateFrom" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dateTo" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="isUsing" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="userID" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BankCard" nillable="true" type="tns:BankCard" />
+</xs:schema>

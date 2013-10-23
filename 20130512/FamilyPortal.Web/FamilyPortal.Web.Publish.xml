@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="E:\FamilyPortal\20130323\sldeploy" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="05/04/2013 11:56:49" />
+    <file relUrl="ClientBin/System.ComponentModel.DataAnnotations.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="Silverlight.js" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="ClientBin/System.Windows.Controls.Data.Input.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="ClientBin/System.Windows.Controls.Navigation.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="ClientBin/System.Windows.Controls.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="DB/FamilyDB.sql" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="bin/FamilyPortal.Web.dll" publishTime="05/04/2013 11:56:43" />
+    <file relUrl="ClientBin/System.Windows.Controls.Input.Toolkit.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="ClientBin/System.Windows.Controls.Data.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="ClientBin/System.Windows.Controls.DataVisualization.Toolkit.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="image/SLMedallion_CHS.png" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="bin/FamilyPortal.Data.dll" publishTime="05/04/2013 11:56:43" />
+    <file relUrl="ClientBin/System.Windows.Controls.Toolkit.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="bin/FamilyPortal.Web.pdb" publishTime="05/04/2013 11:56:43" />
+    <file relUrl="ClientBin/System.Windows.Data.zip" publishTime="03/27/2013 20:31:32" />
+    <file relUrl="Default.html" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="Default.aspx" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="ClientBin/FamilyPortal.xap" publishTime="05/04/2013 11:56:29" />
+    <file relUrl="DB/TestSQLQuery.sql" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="bin/FamilyPortal.Data.pdb" publishTime="05/04/2013 11:56:42" />
+    <file relUrl="FamilyService.svc" publishTime="03/23/2013 09:22:23" />
+    <file relUrl="bin/FamilyPortal.Common.dll" publishTime="05/04/2013 11:56:43" />
+    <file relUrl="bin/FamilyPortal.Common.pdb" publishTime="05/04/2013 11:56:43" />
+  </publishProfile>
+</publishData>

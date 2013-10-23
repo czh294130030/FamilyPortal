@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyPortal", "FamilyPortal\FamilyPortal.csproj", "{E6460BCB-BDE8-4CA7-8A41-AB27946ECB4C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4CE89B8-9B4A-4CBD-8F51-115543428570} = {B4CE89B8-9B4A-4CBD-8F51-115543428570}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyPortal.Web", "FamilyPortal.Web\FamilyPortal.Web.csproj", "{B4CE89B8-9B4A-4CBD-8F51-115543428570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyPortal.Data", "FamilyPortal.Data\FamilyPortal.Data.csproj", "{A7B1139A-58DA-4FB8-8EBD-7EDFE3F8534F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyPortal.Common", "FamilyPortal.Common\FamilyPortal.Common.csproj", "{1648FAA3-A242-4476-896A-4297062251D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyPortal.Silverlight.Common", "FamilyPortal.Silverlight.Common\FamilyPortal.Silverlight.Common.csproj", "{C35AC659-B3BD-4D6E-BB26-27CC640F78D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFamilyPortal", "WebFamilyPortal\WebFamilyPortal.csproj", "{F23A133B-AFDD-4281-BFB7-E57310684274}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B4CE89B8-9B4A-4CBD-8F51-115543428570} = {B4CE89B8-9B4A-4CBD-8F51-115543428570}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FamilyPortal\\FamilyPortal.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = FamilyPortal\\
+		SccProjectUniqueName2 = FamilyPortal.Web\\FamilyPortal.Web.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = FamilyPortal.Web\\
+		SccProjectUniqueName3 = FamilyPortal.Silverlight.Common\\FamilyPortal.Silverlight.Common.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = FamilyPortal.Silverlight.Common\\
+		SccProjectUniqueName4 = WebFamilyPortal\\WebFamilyPortal.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = WebFamilyPortal\\
+		SccProjectUniqueName5 = FamilyPortal.Data\\FamilyPortal.Data.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = FamilyPortal.Data\\
+		SccProjectUniqueName6 = FamilyPortal.Common\\FamilyPortal.Common.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = FamilyPortal.Common\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6460BCB-BDE8-4CA7-8A41-AB27946ECB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6460BCB-BDE8-4CA7-8A41-AB27946ECB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6460BCB-BDE8-4CA7-8A41-AB27946ECB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6460BCB-BDE8-4CA7-8A41-AB27946ECB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4CE89B8-9B4A-4CBD-8F51-115543428570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4CE89B8-9B4A-4CBD-8F51-115543428570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4CE89B8-9B4A-4CBD-8F51-115543428570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4CE89B8-9B4A-4CBD-8F51-115543428570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B1139A-58DA-4FB8-8EBD-7EDFE3F8534F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B1139A-58DA-4FB8-8EBD-7EDFE3F8534F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B1139A-58DA-4FB8-8EBD-7EDFE3F8534F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B1139A-58DA-4FB8-8EBD-7EDFE3F8534F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1648FAA3-A242-4476-896A-4297062251D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1648FAA3-A242-4476-896A-4297062251D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1648FAA3-A242-4476-896A-4297062251D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1648FAA3-A242-4476-896A-4297062251D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C35AC659-B3BD-4D6E-BB26-27CC640F78D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C35AC659-B3BD-4D6E-BB26-27CC640F78D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C35AC659-B3BD-4D6E-BB26-27CC640F78D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C35AC659-B3BD-4D6E-BB26-27CC640F78D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23A133B-AFDD-4281-BFB7-E57310684274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23A133B-AFDD-4281-BFB7-E57310684274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23A133B-AFDD-4281-BFB7-E57310684274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23A133B-AFDD-4281-BFB7-E57310684274}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

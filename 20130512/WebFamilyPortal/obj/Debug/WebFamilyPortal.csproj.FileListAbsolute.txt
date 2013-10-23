@@ -1,0 +1,7 @@
+E:\FamilyPortal\20130512\WebFamilyPortal\bin\WebFamilyPortal.dll
+E:\FamilyPortal\20130512\WebFamilyPortal\bin\WebFamilyPortal.pdb
+E:\FamilyPortal\20130512\WebFamilyPortal\bin\FamilyPortal.Common.dll
+E:\FamilyPortal\20130512\WebFamilyPortal\bin\FamilyPortal.Common.pdb
+E:\FamilyPortal\20130512\WebFamilyPortal\obj\Debug\ResolveAssemblyReference.cache
+E:\FamilyPortal\20130512\WebFamilyPortal\obj\Debug\WebFamilyPortal.dll
+E:\FamilyPortal\20130512\WebFamilyPortal\obj\Debug\WebFamilyPortal.pdb

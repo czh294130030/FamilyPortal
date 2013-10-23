@@ -1,0 +1,18 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="FamilyPortal" EntryPointType="FamilyPortal.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="FamilyPortal" Source="FamilyPortal.dll" />
+    <AssemblyPart x:Name="FamilyPortal.Silverlight.Common" Source="FamilyPortal.Silverlight.Common.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit.Internals" Source="System.Windows.Controls.Toolkit.Internals.dll" />
+  </Deployment.Parts>
+  <Deployment.ExternalParts>
+    <ExtensionPart Source="System.ComponentModel.DataAnnotations.zip" />
+    <ExtensionPart Source="System.Windows.Controls.Data.zip" />
+    <ExtensionPart Source="System.Windows.Controls.Data.Input.zip" />
+    <ExtensionPart Source="System.Windows.Controls.DataVisualization.Toolkit.zip" />
+    <ExtensionPart Source="System.Windows.Controls.zip" />
+    <ExtensionPart Source="System.Windows.Controls.Input.Toolkit.zip" />
+    <ExtensionPart Source="System.Windows.Controls.Navigation.zip" />
+    <ExtensionPart Source="System.Windows.Controls.Toolkit.zip" />
+    <ExtensionPart Source="System.Windows.Data.zip" />
+  </Deployment.ExternalParts>
+</Deployment>

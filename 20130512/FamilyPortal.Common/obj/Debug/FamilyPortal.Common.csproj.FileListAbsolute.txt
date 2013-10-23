@@ -1,0 +1,5 @@
+E:\FamilyPortal\20130512\FamilyPortal.Common\bin\Debug\FamilyPortal.Common.dll
+E:\FamilyPortal\20130512\FamilyPortal.Common\bin\Debug\FamilyPortal.Common.pdb
+E:\FamilyPortal\20130512\FamilyPortal.Common\obj\Debug\ResolveAssemblyReference.cache
+E:\FamilyPortal\20130512\FamilyPortal.Common\obj\Debug\FamilyPortal.Common.dll
+E:\FamilyPortal\20130512\FamilyPortal.Common\obj\Debug\FamilyPortal.Common.pdb

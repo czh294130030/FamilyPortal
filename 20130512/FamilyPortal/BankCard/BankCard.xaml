@@ -1,0 +1,24 @@
+﻿<navigation:Page xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"  x:Class="FamilyPortal.BankCard.BankCard" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="640" d:DesignHeight="480"
+           Title="Bank Card">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel VerticalAlignment="Center" Grid.Row="1">
+            <ProgressBar Name="BankCardProgressBar" Width="180" Height="12" IsIndeterminate="True"></ProgressBar>
+        </StackPanel>
+        <toolkit:WrapPanel Name="MainWrapPanel"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <HyperlinkButton Name="AddHyperlinkButton" Content="Add" FontSize="14" Foreground="Black"></HyperlinkButton>
+        </StackPanel>
+    </Grid>
+</navigation:Page>
